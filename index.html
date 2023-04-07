@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<link rel ="stylesheet" type="text/css" href="style.css">
+	<title> Trista Sahely - Future Game Programmer </title>
+	<link rel = "icon" href = "scr4.jpg">
+</head>
+
+<header>
+	<img src="cont3.png" alt="controller logo" id="logo">
+	<nav>
+		<center><h1>Trista Sahely - Game Programmer </h1></center>
+
+		<center><a href = "Projects.html" id = "iamP">Projects</a></center>
+		<center><a href = "AboutMe.html" id = "ipAM">About Me</a></center>
+	</nav>
+	<select id="colorPick">
+		<option value="option1">Color Scheme!</option>
+		<option value="option2">Colors1</option>
+		<option value="option3">Colors2</option>
+		<option value="option4">Colors3</option>
+	</select>
+</header>
+
+<div id = "all">
+	<p>
+		Here's a list of my top 3 favourite games ->
+	</p>
+
+	<ol>
+		<li> Minecraft </li>
+		<li> League of Legends </li>
+		<li> VALORANT </li>
+	</ol>
+
+	<div id ="container1">
+		<div class="fcont" id="mc">
+			<img src = "mc.jpg" alt = "Minecraft" width = "500" height = "350">
+		</div>
+
+		<div class = "fcont" id = "lo">
+			<img src = "LoL.jpg" alt = "League of Legends" width = "600" height = "350">
+		</div>
+
+		<div class = "fcont" id = "va">
+			<img src = "val.jpg" alt = "VALORANT" width = "500" height = "350">
+		</div>
+	</div>
+	<br>
+	<body>
+		<h3> Form! </h3>
+
+		<div>
+				<label for="input">What is your favourite video game?</label>
+				<input type ="text" id="input" placeholder="Type here!">
+				<input type ="button" id ="button" value ="Enter">
+		
+				<p id ="game">...</p>
+		</div>
+	</body>
+<script>
+	const button = document.getElementById('button');
+	const input = document.getElementById('input');
+	const game = document.getElementById('game');
+
+	function displayGame(input) {
+		game.innerText = input + " is an awesome game!"
+	}
+
+	button.addEventListener('click', () => {
+		displayGame(input.value)
+	})
+</script>
+
+</div>
+
+</html>
